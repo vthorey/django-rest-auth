@@ -160,7 +160,7 @@ GitHub
 
 If you are using GitHub for your social authentication, it uses code and not AccessToken directly.
 
-3. Create new view as a subclass of ``rest_auth.views.LoginView`` with ``TwitterOAuthAdapter`` adapter and  ``TwitterLoginSerializer`` as an attribute:
+3. Create new view as a subclass of ``rest_auth.views.LoginView`` with ``GitHubOAuth2Adapter`` adapter, an ``OAuth2Client`` and a callback_url as attributes:
 
 .. code-block:: python
 
